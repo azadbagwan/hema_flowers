@@ -9,11 +9,11 @@ import Img from "gatsby-image"
  * component, rather than having to pass the image data down from pages.
  *
  * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `StaticQuery`: https://gatsby.dev/staticquery
+ * - `gatsby-image`: https://gatsby.app/gatsby-image
+ * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = () => (
+const Image_1 = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -29,4 +29,4 @@ const Image = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
-export default Image
+export default Image_1
