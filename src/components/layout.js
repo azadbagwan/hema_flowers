@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Menu from "../components/menu"
+import Nav from "../components/NavbarHeader"
 import Header from "./header"
 import "./layout.css"
 
@@ -34,6 +35,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <Nav />
           <Menu />
           <main>{children}</main>
           <footer>
