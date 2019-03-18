@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .topbanner {
-  background-image: url("../images/work_2.png");
+  background-color: purple;
 }
 article,
 aside,

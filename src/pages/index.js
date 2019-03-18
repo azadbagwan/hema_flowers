@@ -19,6 +19,7 @@ const IndexPage = () => (
         "planters",
       ]}
     />
+
     <div />
     <h1>Hema Flowers</h1>
     <p>
@@ -28,6 +29,7 @@ const IndexPage = () => (
     <p>
       At Hema flowers we pride ourselves in providing great customer service.
     </p>
+    <Image />
     <div
       className="main-div"
       style={{ maxWidth: "100%", marginBottom: `1.45rem` }}
