@@ -9,9 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Menu from "../components/menu"
-import Nav from "../components/NavbarHeader"
+import Nav from "./globals/navbar/NavbarHeader"
 import Header from "./header"
 import "./layout.css"
+import Navbar from "../components/globals/navbar"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,6 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+
         <div
           style={{
             margin: `0 auto`,
@@ -35,7 +37,8 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <Nav />
+          <Navbar />
+
           <Menu />
           <main>{children}</main>
           <footer>
