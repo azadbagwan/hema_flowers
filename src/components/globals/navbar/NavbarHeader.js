@@ -12,6 +12,7 @@ export default class NavbarHeader extends Component {
         <Link to="/">
           <img src={logo} alt="Hem flowers" />
         </Link>
+        <h1>Hema Flowers</h1>
         <FaAlignRight
           className="toggle-icon"
           onClick={() => {

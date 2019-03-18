@@ -21,7 +21,7 @@ const IndexPage = () => (
     />
 
     <div />
-    <h1>Hema Flowers</h1>
+
     <p>
       we been serving high qualityinterior beautifying products for last 11
       years to entire pune at the best cost.
@@ -33,9 +33,7 @@ const IndexPage = () => (
     <div
       className="main-div"
       style={{ maxWidth: "100%", marginBottom: `1.45rem` }}
-    >
-      <Gallery />
-    </div>
+    />
     <Link to="/page-2/">Go to page 2</Link>
     <Link to="/gallery_1/">Go to gallery</Link>
   </Layout>

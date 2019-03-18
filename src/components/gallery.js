@@ -25,6 +25,20 @@ const SINGLE_IMAGE = graphql`
         }
       }
     }
+    img4: file(relativePath: { eq: "work_1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "work_1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 export default function gallery() {

@@ -67,5 +67,9 @@ const LinkWrapper = styled.ul`
     height: auto;
     display: flex;
     margin: 0 auto;
+    .nav-link:hover {
+      background: ${styles.colors.mainWhite};
+      padding: 0.5rem 1rem o.5rem 1rem;
+    }
   }
 `
