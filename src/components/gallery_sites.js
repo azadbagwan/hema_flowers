@@ -2,37 +2,37 @@ import React from "react"
 import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-const SINGLE_IMAGE = graphql`
+const SINGLE_IMAGES = graphql`
   query {
-    img1: file(relativePath: { eq: "work_1.png" }) {
+    img1: file(relativePath: { eq: "site_completed1.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img2: file(relativePath: { eq: "work_2.png" }) {
+    img2: file(relativePath: { eq: "site_completed2.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img3: file(relativePath: { eq: "work_3.png" }) {
+    img3: file(relativePath: { eq: "site_completed3.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img4: file(relativePath: { eq: "vases.png" }) {
+    img4: file(relativePath: { eq: "site_completed4.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img5: file(relativePath: { eq: "work_1.png" }) {
+    img5: file(relativePath: { eq: "site_completed5.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
@@ -41,33 +41,38 @@ const SINGLE_IMAGE = graphql`
     }
   }
 `
-export default function gallery() {
+export default function gallery_sites() {
   return (
     <StaticQuery
-      query={SINGLE_IMAGE}
+      query={SINGLE_IMAGES}
       render={data => {
         const img1 = data.img1.childImageSharp.fluid
         const img2 = data.img2.childImageSharp.fluid
         const img3 = data.img3.childImageSharp.fluid
         const img4 = data.img4.childImageSharp.fluid
+        const img5 = data.img5.childImageSharp.fluid
         return (
           <div>
             <GalleryWrapper>
               <div className="item item-1">
                 <Img fluid={img1} />
-                <p className="info">Full office lobby</p>
+                <p className="info">Site</p>
               </div>
               <div className="item item-2">
                 <Img fluid={img2} />
-                <p className="info">Full vertical decoration</p>
+                <p className="info">Site</p>
               </div>
               <div className="item item-3">
                 <Img fluid={img3} />
-                <p className="info">plants</p>
+                <p className="info">Site</p>
               </div>
               <div className="item item-4">
                 <Img fluid={img4} />
-                <p className="info">Vases</p>
+                <p className="info">Site</p>
+              </div>
+              <div className="item item-5">
+                <Img fluid={img5} />
+                <p className="info">Site</p>
               </div>
             </GalleryWrapper>
           </div>

@@ -30,9 +30,10 @@ const NavWrapper = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+
   z-index: 1000;
   paddin: 0.5rem 1rem 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 
   @media (min-width: 768px) {
     display: flex;

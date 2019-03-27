@@ -17,13 +17,19 @@ const menu = () => (
       }}
     >
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/">Stones</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about">Plants</Link>
       </li>
       <li>
-        <Link to="/gallery_1">Gallery</Link>
+        <Link to="/gallery_1">Planters</Link>
+      </li>
+      <li>
+        <Link to="/gallery_1">Artificial Grass</Link>
+      </li>
+      <li>
+        <Link to="/sites_completed">Sites</Link>
       </li>
     </ul>
   </div>

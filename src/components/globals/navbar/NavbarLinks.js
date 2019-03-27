@@ -17,7 +17,7 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 2,
-        path: "/gallery_1",
+        path: "/Gallery_main",
         name: "gallery",
       },
     ],
@@ -62,7 +62,6 @@ const LinkWrapper = styled.ul`
   height: ${props => (props.open ? "152px" : "0px")};
   overflow: hidden;
   ${styles.transitionDefault};
-
   @media (min-width: 768px) {
     height: auto;
     display: flex;

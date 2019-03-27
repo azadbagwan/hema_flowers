@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
-import logo from "../../../images/flower.png"
+import logo from "../../../images/Hemaflowers_logo.png"
 import { FaAlignRight } from "react-icons/fa"
 import { styles } from "../../../utils"
 export default class NavbarHeader extends Component {
@@ -10,9 +10,9 @@ export default class NavbarHeader extends Component {
     return (
       <HeaderWrapper>
         <Link to="/">
-          <img src={logo} alt="Hem flowers" />
+          <img src={logo} alt="Hema flowers" className="logo" />
         </Link>
-        <h1>Hema Flowers</h1>
+
         <FaAlignRight
           className="toggle-icon"
           onClick={() => {
@@ -28,14 +28,24 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   .toggle-icon {
     font-size: 1.75rem;
     color: ${styles.colors.mainPurple};
     cursor: pointer;
   }
+  .logo {
+    width: 300px;
+    height: 100px;
+  }
+
   @media (min-width: 768px) {
     .toggle-icon {
       display: none;
+    }
+    .logo {
+      width: 400px;
+      height: 120px;
     }
   }
 `

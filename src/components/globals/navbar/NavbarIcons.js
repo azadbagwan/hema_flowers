@@ -62,4 +62,10 @@ const IconWrapper = styled.div`
     color: white;
     background-color: #25d366;
   }
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+  }
 `
