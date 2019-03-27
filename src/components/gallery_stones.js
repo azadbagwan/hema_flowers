@@ -4,70 +4,91 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 const SINGLE_IMAGES = graphql`
   query {
-    img1: file(relativePath: { eq: "site_completed1.png" }) {
+    img1: file(relativePath: { eq: "stones1.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img2: file(relativePath: { eq: "site_completed2.png" }) {
+    img2: file(relativePath: { eq: "stones2.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img3: file(relativePath: { eq: "site_completed3.png" }) {
+    img3: file(relativePath: { eq: "stones3.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img4: file(relativePath: { eq: "site_completed4.png" }) {
+    img4: file(relativePath: { eq: "stones4.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img5: file(relativePath: { eq: "site_completed5.png" }) {
+    img5: file(relativePath: { eq: "stones5.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img6: file(relativePath: { eq: "site_completed6.png" }) {
+    img6: file(relativePath: { eq: "stones6.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img7: file(relativePath: { eq: "site_completed7.png" }) {
+    img7: file(relativePath: { eq: "stones7.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img8: file(relativePath: { eq: "site_completed8.png" }) {
+    img8: file(relativePath: { eq: "stones8.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img9: file(relativePath: { eq: "site_completed9.png" }) {
+    img9: file(relativePath: { eq: "stones9.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img10: file(relativePath: { eq: "site_completed10.png" }) {
+    img10: file(relativePath: { eq: "stones10.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img11: file(relativePath: { eq: "stones11.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img12: file(relativePath: { eq: "stones12.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img13: file(relativePath: { eq: "stones13.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
@@ -76,7 +97,7 @@ const SINGLE_IMAGES = graphql`
     }
   }
 `
-export default function gallery_sites() {
+export default function gallery_stones() {
   return (
     <StaticQuery
       query={SINGLE_IMAGES}
@@ -91,6 +112,9 @@ export default function gallery_sites() {
         const img8 = data.img8.childImageSharp.fluid
         const img9 = data.img9.childImageSharp.fluid
         const img10 = data.img10.childImageSharp.fluid
+        const img11 = data.img11.childImageSharp.fluid
+        const img12 = data.img12.childImageSharp.fluid
+        const img13 = data.img13.childImageSharp.fluid
         return (
           <div>
             <GalleryWrapper>
@@ -132,6 +156,18 @@ export default function gallery_sites() {
               </div>
               <div className="item item-10">
                 <Img fluid={img10} />
+                <p className="info">Site</p>
+              </div>
+              <div className="item item-11">
+                <Img fluid={img11} />
+                <p className="info">Site</p>
+              </div>
+              <div className="item item-12">
+                <Img fluid={img12} />
+                <p className="info">Site</p>
+              </div>
+              <div className="item item-13">
+                <Img fluid={img13} />
                 <p className="info">Site</p>
               </div>
             </GalleryWrapper>

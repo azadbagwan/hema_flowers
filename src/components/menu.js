@@ -17,7 +17,7 @@ const menu = () => (
       }}
     >
       <li>
-        <Link to="/">Stones</Link>
+        <Link to="/stones_gallery">Stones</Link>
       </li>
       <li>
         <Link to="/about">Plants</Link>
