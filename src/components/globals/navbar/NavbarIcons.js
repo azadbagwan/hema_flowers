@@ -19,7 +19,7 @@ export default class NavbarIcons extends Component {
         id: 3,
         icon: <FaWhatsapp className="icon whatsapp-icon" />,
         path:
-          "https://wa.me/918806575275?text=Im%20interested%20in%20your%20car%20for%20sale",
+          "https://wa.me/919765444344?text=Im%20interested%20in%20your%20products%20for%20sale",
       },
     ],
   }
