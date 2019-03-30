@@ -109,6 +109,7 @@ hr {
   height: 0;
   overflow: visible;
 }
+
 button,
 input,
 optgroup,
@@ -619,7 +620,14 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-
+.main-menu {
+  padding-top: 25%;
+}
+@media (min-width: 768) {
+  .main-menu {
+    padding-top: 100px;
+  }
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

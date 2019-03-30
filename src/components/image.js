@@ -16,7 +16,7 @@ import styled from "styled-components"
 
 const SINGLE_IMAGES = graphql`
   query {
-    img1: file(relativePath: { eq: "site_completed1.png" }) {
+    img1: file(relativePath: { eq: "site_completed10.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

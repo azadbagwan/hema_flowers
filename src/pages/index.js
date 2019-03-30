@@ -20,9 +20,9 @@ const IndexPage = () => (
         "planters",
       ]}
     />
-    <indexWrapper>
+    <GalleryWrapper>
       <div />
-      <div className="main-div">
+      <div className="left-div">
         <Image />
       </div>
 
@@ -38,28 +38,34 @@ const IndexPage = () => (
         lilies, primulas and roses among a riot of colours and textures you
         cannot miss to spot our vibrant store in good luck chawk. At Hema
         flowers, as we often hear from our patrons, you will be spoilt for
-        choice. Spread over a 800sq feet dedicated exclusively to artificial
-        floral products and ancillaries. With over 50 varieties of artificial
-        trees and plants and nearly a hundred in flower bunches, over 40
-        varieties of creepers, ferns and grasses we even have over 25 options in
-        pebbles and chips we endeavor to fulfill your landscaping and décor
-        requirements. Looking for that perfect fit for your favorite living room
-        corner ? Or the soothing appeal of a bunch of flowers near your work
-        desk? Want to liven up your hallway and patio with a vertical garden?
-        Our experienced team of dedicated individuals is always at hand to help
-        you find just what you’re looking for.
+        choice.
       </div>
+    </GalleryWrapper>
+    <div>
+      {" "}
       <p>
-        At Hema flowers we pride ourselves in providing great customer service.
+        Spread over a 800sq feet dedicated exclusively to artificial floral
+        products and ancillaries. With over 50 varieties of artificial trees and
+        plants and nearly a hundred in flower bunches, over 40 varieties of
+        creepers, ferns and grasses we even have over 25 options in pebbles and
+        chips we endeavor to fulfill your landscaping and décor requirements.
+        Looking for that perfect fit for your favorite living room corner ? Or
+        the soothing appeal of a bunch of flowers near your work desk? Want to
+        liven up your hallway and patio with a vertical garden? Our experienced
+        team of dedicated individuals is always at hand to help you find just
+        what you’re looking for. At Hema flowers we pride ourselves in providing
+        great customer service.
       </p>
-    </indexWrapper>
+    </div>
 
     <Link to="/page-2/">Go to page 2</Link>
     <Link to="/gallery_1/">Go to gallery</Link>
   </Layout>
 )
-const indexWrapper = styled.div`
+const GalleryWrapper = styled.div`
+
 @media (min-width: 992px) {
+  
   .item{
     display:block;
   position:relative;
@@ -70,6 +76,17 @@ const indexWrapper = styled.div`
     height: 300px;
   }
   @media (min-width: 762px) {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+.left-div {
+  grid-area: one;
+}
+.left-div {
+  grid-area: two;
+}
+grid-template-areas:
+      "one  two"
+      "one  two";
     .item{
       display:block;
     position:relative;
