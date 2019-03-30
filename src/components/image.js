@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from "styled-components"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,20 +14,46 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "work_2.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+const SINGLE_IMAGES = graphql`
+  query {
+    img1: file(relativePath: { eq: "site_completed1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default Image
+    }
+  }
+`
+export default function image() {
+  return (
+    <StaticQuery
+      query={SINGLE_IMAGES}
+      render={data => {
+        const img1 = data.img1.childImageSharp.fluid
+
+        return (
+          <div>
+            <GalleryWrapper>
+              <div className="item item-1">
+                <Img fluid={img1} />
+                <p className="info" />
+              </div>
+            </GalleryWrapper>
+          </div>
+        )
+      }}
+    />
+  )
+}
+const GalleryWrapper = styled.div`
+@media (min-width: 992px) {
+  .item{
+    display:block;
+  position:relative;
+  }
+  .gatsby-image-wrapper {
+    
+    width: 300px;
+    height: 300px;
+  }`
