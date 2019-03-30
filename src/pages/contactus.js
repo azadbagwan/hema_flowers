@@ -19,10 +19,10 @@ export default class contactus extends Component {
           ]}
         />
         <div>
-          <formWrapper>
+          <GalleryWrapper>
             <div className="container">
               <h1>Contact Us</h1>
-              <form name="contact" netlify>
+              <form className="contact" netlify>
                 <p>
                   <label>
                     Name <input type="text" name="name" />
@@ -38,17 +38,18 @@ export default class contactus extends Component {
                 </p>
               </form>
             </div>
-          </formWrapper>
+          </GalleryWrapper>
         </div>
       </Layout>
     )
   }
 }
 
-const formWrapper = styled.div`
+const GalleryWrapper = styled.div`
   .container {
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 5px;
-    background: #ffa500;
-    padding: 20px;
+    background: orange;
+    width: 50%;
   }
 `
