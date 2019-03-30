@@ -56,4 +56,14 @@ const GalleryWrapper = styled.div`
     
     width: 300px;
     height: 300px;
-  }`
+  }
+  @media (min-width: 762px) {
+    .item{
+      display:block;
+    position:relative;
+    }
+    .gatsby-image-wrapper {
+      
+      width: 300px;
+      height: 300px;
+    }`

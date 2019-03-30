@@ -26,7 +26,7 @@ const IndexPage = () => (
       <Image />
     </div>
 
-    <div>
+    <div className="right-div">
       Hema flowers is an exclusive artificial flower store in heart of the city,
       catering to our customers for over 12 years. With the widest variety of
       artificial plants, trees, flower bunches, creepers and artificial lawn in
