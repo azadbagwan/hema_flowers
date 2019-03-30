@@ -18,7 +18,12 @@ export default class NavbarLinks extends Component {
       {
         id: 2,
         path: "/Gallery_main",
-        name: "gallery",
+        name: "Gallery",
+      },
+      {
+        id: 3,
+        path: "/contactus",
+        name: "Contact us",
       },
     ],
   }
