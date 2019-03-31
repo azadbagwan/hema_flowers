@@ -18,7 +18,7 @@ export default class about extends Component {
             "planters",
           ]}
         />
-        <h1> This is about us</h1>
+        <h1> Hema Flowers</h1>
         <div>
           Hema flowers is an exclusive artificial flower store in heart of the
           city, catering to our customers for over 12 years. With the widest

@@ -20,7 +20,12 @@ export default class contactus extends Component {
         />
 
         <h1>Contact Us</h1>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <p>
             <label>
               Your Name: <input type="text" name="name" />
@@ -34,7 +39,7 @@ export default class contactus extends Component {
           <p />
 
           <p>
-            <button type="submit">Send</button>
+            <button>Send</button>
           </p>
         </form>
       </Layout>
