@@ -73,7 +73,7 @@ const NavWrapper = styled.nav`
   overflow: hidden;
   @media (max-width: 768px) {
     .main-menu {
-      padding-top: 100px;
+      padding-top: 20%;
     }
     li {
       list-style-type: none;

@@ -8,7 +8,9 @@ import Menu from "../components/menu"
 const GalleryGrass = () => (
   <Layout>
     <SEO title="Page two" />
-    <Menu />
+    <div className="menu-1">
+      <Menu />
+    </div>
     <h1>Sites</h1>
     <Gallery_grass />
     <Link to="/">Go to Index</Link>
