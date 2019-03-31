@@ -15,12 +15,14 @@ export default class NavBar extends Component {
   }
   render() {
     return (
-      <NavWrapper>
-        <NavbarHeader handleNavbar={this.handleNavbar} />
+      <div className="navbar-main">
+        <NavWrapper>
+          <NavbarHeader handleNavbar={this.handleNavbar} />
 
-        <NavbarLinks navbarOpen={this.state.navbarOpen} />
-        <NavbarIcons />
-      </NavWrapper>
+          <NavbarLinks navbarOpen={this.state.navbarOpen} />
+          <NavbarIcons />
+        </NavWrapper>
+      </div>
     )
   }
 }
@@ -38,5 +40,9 @@ const NavWrapper = styled.nav`
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+  }
+  @media (max-width: 768px) {
+    align-items: center;
+    padding-bottom: 0px;
   }
 `
