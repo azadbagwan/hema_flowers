@@ -18,30 +18,25 @@ export default class contactus extends Component {
             "planters",
           ]}
         />
-        <div>
-          <GalleryWrapper>
-            <div className="container">
-              <h1>Contact Us</h1>
-              <form name="contact" method="POST" data-netlify="true">
-                <p>
-                  <label>
-                    Your Name: <input type="text" name="name" />
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    Your Email: <input type="email" name="email" />
-                  </label>
-                </p>
-                <p />
 
-                <p>
-                  <button type="submit">Send</button>
-                </p>
-              </form>
-            </div>
-          </GalleryWrapper>
-        </div>
+        <h1>Contact Us</h1>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p />
+
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </Layout>
     )
   }

@@ -27,7 +27,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Navbar />
+        <div className="nav-bar">
+          <Navbar />
+        </div>
 
         <div
           style={{
