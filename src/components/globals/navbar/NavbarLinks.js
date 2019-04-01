@@ -64,7 +64,7 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem o.5rem 1.3rem;
     }
   }
-  height: ${props => (props.open ? "152px" : "0px")};
+  height: ${props => (props.open ? "200px" : "0px")};
   overflow: hidden;
   ${styles.transitionDefault};
   @media (min-width: 768px) {

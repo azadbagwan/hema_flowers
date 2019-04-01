@@ -31,11 +31,7 @@ export default class contactus extends Component {
               Your Name: <input type="text" name="name" />
             </label>
           </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
+
           <p />
 
           <p>
